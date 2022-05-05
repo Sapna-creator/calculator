@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Calculator Project</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="script.js">
+    </script>
+</head>
+<body>
+
+  <table>
+ <!--The "screen" of the calculator. -->
+    <tr>
+      <td colspan="4" id="screen"></td>
+    </tr>
+ <!--Circumference & all clear button -->
+    <tr>
+      <td colspan="2"><button id="circ" class="input">C=2πR</button></td>
+      <td colspan="2"><button id="ac" class="input">AC</button></td>
+    </tr>
+    <tr>
+<!--Numbers 7 -9 and the division button  -->
+      <td><button onclick="regInput('7')">7</button></td>
+      <td><button onclick="regInput('8')">8</button></td>
+      <td><button onclick="regInput('9')">9</button></td>
+      <td><button onclick="regInput('/')" class="input">÷</button></td>
+    </tr>
+    <tr>
+<!--Numbers 4-6 and the multiplication button -->
+      <td><button onclick="regInput('4')">4</button></td>
+      <td><button onclick="regInput('5')">5</button></td>
+      <td><button onclick="regInput('6')">6</button></td>
+      <td><button onclick="regInput('*')" class="input">x</button></td>
+    </tr>
+    <tr>
+<!-- Numbers 1-3 and the subtraction button -->
+      <td><button onclick="regInput('1')">1</button></td>
+      <td><button onclick="regInput('2')">2</button></td>
+      <td><button onclick="regInput('3')">3</button></td>
+      <td><button onclick="regInput('-')" class="input">-</button></td>
+    </tr>
+    <tr>
+<!-- Decimal, 0, equal, and + -->
+      <td><button onclick="regInput('.')">.</button></td>
+      <td><button onclick="regInput('0')">0</button></td>
+      <td><button onclick="total()" class="input">=</button></td>
+      <td><button onclick="regInput('+')" class="input">+</button></td>
+    </tr>
+
+  </table>
+
+</body>
+  <script src="script.js"></script>
+</html>
